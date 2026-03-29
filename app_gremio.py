@@ -36,7 +36,7 @@ with col1:
         enviar = st.form_submit_button("Evaluar Ingreso")
 
     if enviar and nombre:
-        # Lógica de Dados para ingreso (Vara de 36)
+        # Lógica de Dados para ingreso (Vara de 28)
         fza = sum([random.randint(1, 6) for _ in range(3)])
         agi = sum([random.randint(1, 6) for _ in range(3)])
         int_st = sum([random.randint(1, 6) for _ in range(3)])
@@ -48,7 +48,7 @@ with col1:
         
         total = fza + agi + int_st
         
-        if total >= 36:
+        if total >= 28:
             nuevo_pj = {
                 "nombre": nombre, "clase": clase, "raza": raza,
                 "stats": {"fuerza": fza, "agilidad": agi, "inteligencia": int_st},
@@ -71,16 +71,16 @@ with col2:
     else:
         # Lista de 10 Eventos
         eventos = [
-            {"n": "Cofre Mimético", "d": "El cofre muerde.", "s": None, "dif": 14},
-            {"n": "Trampa de Fuego", "d": "¡Llamas!", "s": "agilidad", "dif": 13},
-            {"n": "Puerta de Hierro", "d": "Pesada.", "s": "fuerza", "dif": 15},
-            {"n": "Acertijo Mortal", "d": "Enigma antiguo.", "s": "inteligencia", "dif": 12},
-            {"n": "Runa Explosiva", "d": "Magia inestable.", "s": None, "dif": 11},
+            {"n": "Cofre Mimético", "d": "El cofre muerde.", "s": None, "dif": 17},
+            {"n": "Trampa de Fuego", "d": "¡Llamas!", "s": "agilidad", "dif": 17},
+            {"n": "Puerta de Hierro", "d": "Pesada.", "s": "fuerza", "dif": 16},
+            {"n": "Acertijo Mortal", "d": "Enigma antiguo.", "s": "inteligencia", "dif": 16},
+            {"n": "Runa Explosiva", "d": "Magia inestable.", "s": None, "dif": 17},
             {"n": "Puente Colgante", "d": "Equilibrio.", "s": "agilidad", "dif": 15},
             {"n": "Derrumbe", "d": "¡Piedras!", "s": "fuerza", "dif": 16},
             {"n": "Espectro", "d": "Duelo mental.", "s": "inteligencia", "dif": 14},
-            {"n": "Niebla Venenosa", "d": "No respires.", "s": None, "dif": 13},
-            {"n": "Piso Resbaladizo", "d": "Aceite goblin.", "s": "agilidad", "dif": 12}
+            {"n": "Niebla Venenosa", "d": "No respires.", "s": None, "dif": 15},
+            {"n": "Piso Resbaladizo", "d": "Aceite goblin.", "s": "agilidad", "dif": 14}
         ]
 
         if st.session_state.sala_actual <= 5:
