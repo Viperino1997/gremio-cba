@@ -67,7 +67,7 @@ if enviar and nombre:
         total = fza + agi + int_st
         
         if total >= 32:
-        nuevo_pj = {
+            nuevo_pj = {
         "nombre": nombre,
         "clase": clase,
         "genero": genero,
@@ -77,7 +77,7 @@ if enviar and nombre:
         "stats": {"fuerza": f, "agilidad": a, "inteligencia": i},
         "total": f + a + i,
         "vivo": True
-         }
+             }
             st.session_state.gremio.append(nuevo_pj)
             st.success(f"¡{nombre} ADMITIDO! (Poder: {total})")
             st.balloons()
