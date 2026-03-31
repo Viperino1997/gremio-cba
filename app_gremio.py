@@ -140,7 +140,7 @@ if nombres_vivos:
             heroe_nombre = st.selectbox("¿Quién avanza?", nombres_vivos)
             
             # --- 2. BOTÓN DE ACCIÓN Y LÓGICA DE DAÑO ---
-if st.button("¡AVANZAR A LA SIGUIENTE SALA!"):
+  if st.button("¡AVANZAR A LA SIGUIENTE SALA!"):
     evento = random.choice(eventos)
     st.warning(f"⚠️ **SALA {st.session_state.sala_actual}:** {evento['n']} - {evento['d']}")
     
@@ -154,7 +154,7 @@ if st.button("¡AVANZAR A LA SIGUIENTE SALA!"):
     if total_tirada >= evento['dif']:
         st.success(f"✨ ¡ÉXITO! {heroe['nombre']} superó el desafío sin rasguños.")
         st.session_state.sala_actual += 1
-    else:
+  else:
         # NIVEL 3: Cálculo de daño
         puntos_daño = random.randint(25, 45) # Podés subir o bajar este rango
         heroe['hp_actual'] -= puntos_daño
@@ -167,7 +167,7 @@ if st.button("¡AVANZAR A LA SIGUIENTE SALA!"):
 
     # ESTE ES EL ELSE QUE TENÉS QUE MOVER (Línea 174)
     # Tiene que estar alineado con el IF principal de la mazmorra
-    else:
+else:
         st.success("🏆 ¡EL GREMIO HA CONQUISTADO LA MAZMORRA!")
         if st.button("Reiniciar Aventura"):
             st.session_state.sala_actual = 1
