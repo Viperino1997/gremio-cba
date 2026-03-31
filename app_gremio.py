@@ -76,8 +76,7 @@ if enviar and nombre:
         "hp_actual": 100,  # Empiezan con la vida al máximo
         "stats": {"fuerza": f, "agilidad": a, "inteligencia": i},
         "total": f + a + i,
-        "vivo": True
-            }
+        "vivo": True}
             st.session_state.gremio.append(nuevo_pj)
             st.success(f"¡{nombre} ADMITIDO! (Poder: {total})")
             st.balloons()
