@@ -159,18 +159,20 @@ if st.button("¡AVANZAR A LA SIGUIENTE SALA!"):
         puntos_daño = random.randint(25, 45) # Podés subir o bajar este rango
         heroe['hp_actual'] -= puntos_daño
         
-        # Validamos que no sea menor a 0
+        # Validamos que no sea menor a 0            
         if heroe['hp_actual'] <= 0:
-            heroe['hp_actual'] = 0
-            st.error(f"💀 ¡TRAGEDIA! {heroe['nombre']} recibió {puntos_daño} de daño y ha muerto.")
             st.session_state.gremio.remove(heroe)
-        else:
-            st.error(f"💥 ¡FALLO! {heroe['nombre']} recibió {puntos_daño} de daño, pero sigue en pie.")
-            # Opcional: Avanzar de sala igual aunque reciba daño
-            # st.session_state.sala_actual += 1 
+        
+        st.rerun() # <--- Este termina el bloque de la pelea
 
-    # Forzamos recarga para que la barra de vida se actualice arriba
-    st.rerun()
+    # ESTE ES EL ELSE QUE TENÉS QUE MOVER (Línea 174)
+    # Tiene que estar alineado con el IF principal de la mazmorra
+    else:
+        st.success("🏆 ¡EL GREMIO HA CONQUISTADO LA MAZMORRA!")
+        if st.button("Reiniciar Aventura"):
+            st.session_state.sala_actual = 1
+            st.rerun()# Forzamos recarga para que la barra de vida se actualice arriba
+ 
     else:
     st.success("🏆 ¡EL GREMIO HA CONQUISTADO LA MAZMORRA!")
     if st.button("Reiniciar Aventura"):
