@@ -68,15 +68,15 @@ if enviar and nombre:
         
         if total >= 32:
            nuevo_pj = {
-    "nombre": nombre,
-    "clase": clase,
-    "genero": genero,
-    "imagen_url": img_url,
-    "hp_max": 100,
-    "hp_actual": 100,  # Empiezan con la vida al máximo
-    "stats": {"fuerza": f, "agilidad": a, "inteligencia": i},
-    "total": f + a + i,
-    "vivo": True
+        "nombre": nombre,
+        "clase": clase,
+        "genero": genero,
+        "imagen_url": img_url,
+        "hp_max": 100,
+        "hp_actual": 100,  # Empiezan con la vida al máximo
+        "stats": {"fuerza": f, "agilidad": a, "inteligencia": i},
+        "total": f + a + i,
+        "vivo": True
             }
             st.session_state.gremio.append(nuevo_pj)
             st.success(f"¡{nombre} ADMITIDO! (Poder: {total})")
