@@ -38,7 +38,7 @@ with col1:
         
         total = f + a + i
         # VARA DE 38: Solo los mejores entran
-        if total >= 38:
+        if total >= 35:
             biblioteca = {
                 "Guerrero": {"Hombre": "https://img.itch.zone/aW1nLzExMzkwMDk4LnBuZw==/original/4O1qV%2F.png", "Mujer": "https://img.itch.zone/aW1nLzExMzkwMDk5LnBuZw==/original/8O1qV%2F.png"},
                 "Mago": {"Hombre": "https://img.itch.zone/aW1nLzExMzkwMTAwLnBuZw==/original/CO1qV%2F.png", "Mujer": "https://img.itch.zone/aW1nLzExMzkwMTAxLnBuZw==/original/EO1qV%2F.png"}
