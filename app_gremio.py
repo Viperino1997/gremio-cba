@@ -77,7 +77,6 @@ if enviar and nombre:
     "stats": {"fuerza": f, "agilidad": a, "inteligencia": i},
     "total": f + a + i,
     "vivo": True
-}
             }
             st.session_state.gremio.append(nuevo_pj)
             st.success(f"¡{nombre} ADMITIDO! (Poder: {total})")
