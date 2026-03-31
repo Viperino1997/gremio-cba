@@ -51,7 +51,7 @@ if enviar and nombre:
     
     # Obtenemos la URL según clase y género
     img_url = biblioteca_imagenes.get(clase, {}).get(genero, "https://via.placeholder.com/150")
-        enviar = st.form_submit_button("Evaluar Ingreso")
+    enviar = st.form_submit_button("Evaluar Ingreso")
 
     if enviar and nombre:
         # Lógica de Dados para ingreso (Vara de 32)
