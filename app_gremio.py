@@ -171,13 +171,13 @@ if st.button("¡AVANZAR A LA SIGUIENTE SALA!"):
 
     # Forzamos recarga para que la barra de vida se actualice arriba
     st.rerun()
-        else:
-        st.success("🏆 ¡EL GREMIO HA CONQUISTADO LA MAZMORRA!")
-        if st.button("Reiniciar Aventura"):
-        st.session_state.sala_actual = 1
-        st.rerun()
+    else:
+    st.success("🏆 ¡EL GREMIO HA CONQUISTADO LA MAZMORRA!")
+    if st.button("Reiniciar Aventura"):
+    st.session_state.sala_actual = 1
+    st.rerun()
 
 # Mostrar el historial abajo
-        with st.expander("Ver miembros actuales del Gremio"):
-        st.table(st.session_state.gremio)
+    with st.expander("Ver miembros actuales del Gremio"):
+    st.table(st.session_state.gremio)
 
