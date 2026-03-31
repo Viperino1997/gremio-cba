@@ -83,11 +83,11 @@ with col2:
             st.subheader(f"Sala {st.session_state.sala_actual} de 5")
             
             eventos = [
-                {"n": "Tirano de Hierro", "d": "Un coloso que exige fuerza bruta.", "s": "fuerza", "dif": 22},
-                {"n": "Lluvia de Flechas", "d": "Trampa de presión en el suelo.", "s": "agilidad", "dif": 20},
-                {"n": "Glifo de Aniquilación", "d": "Un sello mágico incomprensible.", "s": "inteligencia", "dif": 25},
-                {"n": "Derrumbe de Techo", "d": "¡Piedras gigantes!", "s": "fuerza", "dif": 24},
-                {"n": "Sombra del Vacío", "d": "Ataca los miedos mentales.", "s": "inteligencia", "dif": 21}
+                {"n": "Tirano de Hierro", "d": "Un coloso que exige fuerza bruta.", "s": "fuerza", "dif": 24},
+                {"n": "Lluvia de Flechas", "d": "Trampa de presión en el suelo.", "s": "agilidad", "dif": 22},
+                {"n": "Glifo de Aniquilación", "d": "Un sello mágico incomprensible.", "s": "inteligencia", "dif": 27},
+                {"n": "Derrumbe de Techo", "d": "¡Piedras gigantes!", "s": "fuerza", "dif": 26},
+                {"n": "Sombra del Vacío", "d": "Ataca los miedos mentales.", "s": "inteligencia", "dif": 23}
             ]
 
             if st.button("¡AVANZAR A LA SIGUIENTE SALA!"):
