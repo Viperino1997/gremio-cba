@@ -133,11 +133,11 @@ if nombres_vivos:
             st.subheader(f"Sala actual: {st.session_state.sala_actual} / 5")
             
             # Elección de camino
-            camino = st.radio("El pasillo se divide:", ["Izquierda", "Derecha"], horizontal=True)
+   camino = st.radio("El pasillo se divide:", ["Izquierda", "Derecha"], horizontal=True)
             
             # Elección de Héroe
-            nombres_vivos = [p['nombre'] for p in st.session_state.gremio]
-            heroe_nombre = st.selectbox("¿Quién avanza?", nombres_vivos)
+   nombres_vivos = [p['nombre'] for p in st.session_state.gremio]
+   heroe_nombre = st.selectbox("¿Quién avanza?", nombres_vivos)
             
             # --- 2. BOTÓN DE ACCIÓN Y LÓGICA DE DAÑO ---
   if st.button("¡AVANZAR A LA SIGUIENTE SALA!"):
